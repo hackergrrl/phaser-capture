@@ -1,0 +1,18 @@
+{
+  "name": "phaser-capture",
+  "version": "0.0.1",
+  "description": "Phaser plugin for easily capturing screenshots (PNG, JPEG) and videos (GIF, WebM).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noffle/phaser-capture.git"
+  },
+  "author": "Stephen Whitmore <stephen.whitmore@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noffle/phaser-capture/issues"
+  },
+  "homepage": "https://github.com/noffle/phaser-capture"
+}
