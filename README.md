@@ -26,8 +26,7 @@ instruct their users. For now, `phaser-capture` is no different:
 // var PhaserCapture = require('phaser-capture');  // For Node/Browserify users
 
 var playState = {
-
-	create: function() {
+  create: function() {
     game.capture = game.plugins.add(Phaser.Plugin.Capture);
     // game.capture = game.plugins.add(PhaserCapture);  // Node/Browserify
 
@@ -38,26 +37,26 @@ var playState = {
         console.log(dataUrl);
       });
     }, 5000);
-	},
+  },
 };
 
-	game = new Phaser.Game(800, 600);
-	game.state.add('play', playState);
-	game.state.start('play');
+game = new Phaser.Game(800, 600);
+game.state.add('play', playState);
+game.state.start('play');
 ```
 
 # API
 
 The resultant plugin exposes only one method currently:
 
-## `screenshot(callback, opts)`
+### `screenshot(callback, opts)`
 
  * `callback` is the function that will be called once the screenshot render is
    complete. It assumes its only argument will be a data-url.
  * `options` is an object that may contain:
    * `format`, either `image/png` or `image/jpeg`
 
-# THE FUTURE!
+# /THE FUTURE!/
  1. Downloading screenshots easily
  2. Uploading screenshots somewhere (Dropbox? Something more agnostic?)
  3. Video recording! (GIF, WebM)
